@@ -59,11 +59,8 @@ namespace ModChecker.Utilities
             {"Body Estimation", "Body Tracking" },
             {"Gorilla Track", "Body Tracking" },
             {"msp", "Monke Smartphone" },
-            {"GorillaBody 4.0.0", "Gorilla Body" },
             {"Deez's Gorilla Media", "Gorilla Media" },
             {"ThatUtilsPad", "That Utils Pad" },
-            {"GorillaShirtsFeb26", "GorillaShirts" },
-            {"juulGunWidth", "Juul Menu" },
             
         };
         public static string[] baseGameProps = new string[]
@@ -81,14 +78,25 @@ namespace ModChecker.Utilities
             "Femboy Client",
             "WE RUN THIS GAME",
         };
-        public static bool isUsingMalachi(VRRig rig)
+        static Dictionary<string, object> keywordPairs = new Dictionary<string, object>
         {
+            { "GorillaShirts", "Gorilla Shirts" },
+            { "GorillaBody", "Gorilla Body" },
+            { "67ur actually so weird for making a mod checker LMAO get a life kid", "Malachi's Menu Reborn" },
+            { "juul_", "Juul Mod Menu" },
+        };
+        public static string CheckForKeywords(VRRig rig)
+        {
+            string foundkey = "";
             var props = rig.Creator.GetPlayerRef().CustomProperties;
-            foreach(DictionaryEntry entry in props)
+            foreach(var prop in props)
             {
-                if (entry.Key.ToString().Contains("67ur actually so weird for making a mod checker LMAO get a life kid")) return true;
+                foreach(var keypair in keywordPairs)
+                {
+                    if (prop.Key.ToString().ToLower().Contains(keypair.Key.ToString().ToLower())) foundkey += foundkey.Length > 0 ? ", " + keypair.Value : keypair.Value;
+                }
             }
-            return false;
+            return foundkey;
         }
 
         static bool CheckForCosmeticX(VRRig rig)
@@ -130,8 +138,8 @@ namespace ModChecker.Utilities
                 }
             }
             if (CheckForCosmeticX(rig)) mods += mods.Length > 0 ? ", " + "CosmeticX" : "CosmeticX";
-            if (isUsingMalachi(rig)) mods += mods.Length > 0 ? ", " + "Malachi's Menu Reborn" : "Malachi's Menu Reborn";
-            if(ReportSusProps(rig).IsNullOrEmpty() == false) mods += mods.Length > 0 ? ", " + ReportSusProps(rig) : ReportSusProps(rig);
+            if(CheckForKeywords(rig).IsNullOrEmpty() == false) mods += mods.Length > 0 ? ", " + CheckForKeywords(rig) : CheckForKeywords(rig);
+            if (ReportSusProps(rig).IsNullOrEmpty() == false) mods += mods.Length > 0 ? ", " + ReportSusProps(rig) : ReportSusProps(rig);
             return mods;
         }
         public static void QuickScan()
@@ -218,13 +226,21 @@ namespace ModChecker.Utilities
             var props = rig.Creator.GetPlayerRef().CustomProperties;
             foreach(DictionaryEntry entry in props)
             {
-                if(!baseGameProps.Contains(entry.Key.ToString()) && !blacklistedProps.Contains(entry.Key.ToString()) && !entry.Key.ToString().Contains("67ur actually so weird for making a mod checker LMAO get a life kid"))
+                if(!baseGameProps.Contains(entry.Key.ToString()) && !blacklistedProps.Contains(entry.Key.ToString()) && !isAKeyword(entry.Key.ToString()))
                 {
                     if (!modprops.ContainsKey(entry.Key.ToString())) 
                         susProps += susProps.Length > 0 ? ", " + $"[SUSPROP] {entry.Key}" : $"[SUSPROP] {entry.Key}";
                 }
             }
             return susProps;
+        }
+        public static bool isAKeyword(string toCheck)
+        {
+            foreach(string key in keywordPairs.Keys)
+            {
+                if(toCheck.Contains(key)) return true;
+            }
+            return false;
         }
         public static void GetCreationCoroutine(string userId, Action<string> onTranslated = null, string format = "MM/dd/yyyy")
         {

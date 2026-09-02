@@ -66,11 +66,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\auror\\source\\repos\\ModChecker\\ModChecker\\ModChecker.csproj",
+      "projectUniqueName": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\ModChecker.csproj",
       "projectName": "ModChecker",
-      "projectPath": "C:\\Users\\auror\\source\\repos\\ModChecker\\ModChecker\\ModChecker.csproj",
+      "projectPath": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\ModChecker.csproj",
       "packagesPath": "C:\\Users\\auror\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\auror\\source\\repos\\ModChecker\\ModChecker\\obj\\",
+      "outputPath": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\auror\\AppData\\Roaming\\NuGet\\NuGet.Config",

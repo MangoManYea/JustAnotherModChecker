@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModChecker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15e820777039e89c1a91e5b24b1bb4ef7d00ed1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModChecker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModChecker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

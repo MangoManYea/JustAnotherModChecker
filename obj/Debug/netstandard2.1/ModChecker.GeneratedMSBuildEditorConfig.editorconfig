@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = ModChecker
-build_property.ProjectDir = C:\Users\auror\source\repos\ModChecker\ModChecker\
+build_property.ProjectDir = C:\Users\auror\OneDrive\Documents\GitHub\JustAnotherModChecker\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

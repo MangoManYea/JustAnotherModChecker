@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37516.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModChecker", "ModChecker.csproj", "{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FCEE8E3-BB70-41E3-8669-D2A444E368E5}
+	EndGlobalSection
+EndGlobal
