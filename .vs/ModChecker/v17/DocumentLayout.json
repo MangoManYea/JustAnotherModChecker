@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}|ModChecker.csproj|c:\\users\\auror\\onedrive\\documents\\github\\justanothermodchecker\\utilities\\checkerutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}|ModChecker.csproj|solutionrelative:utilities\\checkerutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}|ModChecker.csproj|c:\\users\\auror\\onedrive\\documents\\github\\justanothermodchecker\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}|ModChecker.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}|ModChecker.csproj|c:\\users\\auror\\onedrive\\documents\\github\\justanothermodchecker\\utilities\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}|ModChecker.csproj|solutionrelative:utilities\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}|ModChecker.csproj|c:\\users\\auror\\onedrive\\documents\\github\\justanothermodchecker\\utilities\\checkerutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29D7FAFB-343C-C3CC-7B50-3F7424D1CC51}|ModChecker.csproj|solutionrelative:utilities\\checkerutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,36 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MusicManager.cs",
+              "DocumentMoniker": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\Utilities\\MusicManager.cs",
+              "RelativeDocumentMoniker": "Utilities\\MusicManager.cs",
+              "ToolTip": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\Utilities\\MusicManager.cs",
+              "RelativeToolTip": "Utilities\\MusicManager.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T18:51:43.898Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CheckerUtils.cs",
               "DocumentMoniker": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\Utilities\\CheckerUtils.cs",
               "RelativeDocumentMoniker": "Utilities\\CheckerUtils.cs",
               "ToolTip": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\Utilities\\CheckerUtils.cs",
               "RelativeToolTip": "Utilities\\CheckerUtils.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAYwOkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAANAAAAAAAAAAAAAYwOkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-02T17:23:05.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
               "ToolTip": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\Main.cs",
               "RelativeToolTip": "Main.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowF4AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowEUAAADNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T14:56:30.515Z"
+              "WhenOpened": "2026-09-02T14:56:30.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

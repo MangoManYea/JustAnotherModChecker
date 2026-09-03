@@ -67,7 +67,7 @@ namespace ModChecker
 
                     checkerpad.transform.Find("Panel").transform.Find("Music").transform.Find("SkipBack").AddComponent<ButtonCollider>().OnPressed = () => Utilities.MusicManager.PrevTrack();
                     checkerpad.transform.Find("Panel").transform.Find("Music").transform.Find("SkipForward").AddComponent<ButtonCollider>().OnPressed = () => Utilities.MusicManager.NextTrack();
-                    checkerpad.transform.Find("Panel").transform.Find("Music").transform.Find("ChangeState").AddComponent<ButtonCollider>().OnPressed = delegate { Utilities.MusicManager.ChangeSongStatus(); Utilities.MusicManager.paused = !Utilities.MusicManager.paused;  };
+                    checkerpad.transform.Find("Panel").transform.Find("Music").transform.Find("ChangeState").AddComponent<ButtonCollider>().OnPressed = delegate { Utilities.MusicManager.ChangeSongStatus(); };
                 }
                 if (checkerpad != null)
                 {
@@ -126,7 +126,7 @@ namespace ModChecker
                     {
                         checkerpad.transform.Find("Panel").transform.Find("Music").transform.Find("ChangeState").transform.Find("Play").gameObject.SetActive(Utilities.MusicManager.paused);
                         checkerpad.transform.Find("Panel").transform.Find("Music").transform.Find("ChangeState").transform.Find("Pause").gameObject.SetActive(!Utilities.MusicManager.paused);
-                        if (Time.time > MusicDataDelay + 1f)
+                        if (Time.time > MusicDataDelay + 0.2f)
                         {
                             MusicDataDelay = Time.time;
                             Utilities.MusicManager.UpdatePageData();
