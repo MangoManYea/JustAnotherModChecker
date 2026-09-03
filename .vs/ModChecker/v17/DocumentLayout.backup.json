@@ -18,24 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CheckerUtils.cs",
               "DocumentMoniker": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\Utilities\\CheckerUtils.cs",
               "RelativeDocumentMoniker": "Utilities\\CheckerUtils.cs",
-              "ToolTip": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\Utilities\\CheckerUtils.cs*",
-              "RelativeToolTip": "Utilities\\CheckerUtils.cs*",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAQwOQAAAB0AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\auror\\OneDrive\\Documents\\GitHub\\JustAnotherModChecker\\Utilities\\CheckerUtils.cs",
+              "RelativeToolTip": "Utilities\\CheckerUtils.cs",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAkwPoAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-02T17:23:05.433Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Main.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowF4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T14:56:30.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-02T14:56:30.515Z"
             }
           ]
         }

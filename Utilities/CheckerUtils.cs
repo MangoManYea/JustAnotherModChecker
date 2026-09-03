@@ -107,15 +107,24 @@ namespace ModChecker.Utilities
                return true;
             return false;
         }
-        public static string checkPlayer(VRRig rig)
+        static bool HasSpoofedProps(VRRig rig)
         {
             var ispropspoofed = false;
+            var props = rig.Creator.GetPlayerRef().CustomProperties;
+            foreach(DictionaryEntry entry in props)
+            {
+                if (blacklistedProps.Contains(entry.Key)) ispropspoofed = true;
+            }
+            return ispropspoofed;
+        }
+        public static string checkPlayer(VRRig rig)
+        {
+            var ispropspoofed = HasSpoofedProps(rig);
             string mods = "";
             var playerprops = rig.Creator.GetPlayerRef().CustomProperties;
             
             foreach (DictionaryEntry entry in playerprops)
             {
-                if (blacklistedProps.Contains(entry.Key)) ispropspoofed = true;
                 foreach (KeyValuePair<string, string> modentry in modprops)
                 {
                     if (ispropspoofed == true)
@@ -228,8 +237,20 @@ namespace ModChecker.Utilities
             {
                 if(!baseGameProps.Contains(entry.Key.ToString()) && !blacklistedProps.Contains(entry.Key.ToString()) && !isAKeyword(entry.Key.ToString()))
                 {
-                    if (!modprops.ContainsKey(entry.Key.ToString())) 
-                        susProps += susProps.Length > 0 ? ", " + $"[SUSPROP] {entry.Key}" : $"[SUSPROP] {entry.Key}";
+                    if (HasSpoofedProps(rig))
+                    {
+                        if (entry.Key.ToString().ToLower() != "untitled" && entry.Key.ToString().ToLower() != "github.com/ZlothY29IQ/MonkeRealism".ToLower() && entry.Key.ToString().ToLower() != "DTASLOI".ToLower() && entry.Key.ToString().ToLower() != "ZlothYdances".ToLower())
+                        {
+                            if (!modprops.ContainsKey(entry.Key.ToString()))
+                                susProps += susProps.Length > 0 ? ", " + $"[SUSPROP] {entry.Key}" : $"[SUSPROP] {entry.Key}";
+                        }
+                    }
+                    else
+                    {
+                        if (!modprops.ContainsKey(entry.Key.ToString()))
+                            susProps += susProps.Length > 0 ? ", " + $"[SUSPROP] {entry.Key}" : $"[SUSPROP] {entry.Key}";
+                    }
+                    
                 }
             }
             return susProps;
